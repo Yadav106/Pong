@@ -1,5 +1,5 @@
 # Pong
-This pong game is my first project made using the turtle framework of Python
+This pong game is my first project made using the turtle library of Python
 
 The goal of this game is to not let the ball touch any wall parallel to the two paddles.
 The left paddle can be controlled with s(down) and w(up).
