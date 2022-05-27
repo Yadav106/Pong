@@ -1,4 +1,3 @@
-import os
 import turtle
 
 wn = turtle.Screen()
