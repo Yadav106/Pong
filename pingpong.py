@@ -1,4 +1,7 @@
 import turtle
+from random import randint
+
+colours = ['blue', 'green', 'black', 'gray', 'purple', '#CC3818', '#C4CC18', '#E448D3', '#B7F10D', '#27714D', '#05854F']
 
 wn = turtle.Screen()
 wn.title("Pong by @Yadav")
@@ -114,7 +117,11 @@ while True:
     
     #Paddle and Ball Collisions
     if((ball.xcor()>330) and (ball.ycor()<paddle_b.ycor() + 50) and (ball.ycor()>paddle_b.ycor() - 50) and ball.xcor() < 340):
+        n = randint(5, 10)
+        wn.bgcolor(colours[n])
         ball.dx *= -1
     
     if((ball.xcor()<-330) and (ball.ycor()<paddle_a.ycor() + 50) and (ball.ycor()>paddle_a.ycor() - 50) and ball.xcor() > -340):
+        n = randint(0, 4)
+        wn.bgcolor(colours[n])
         ball.dx *= -1
